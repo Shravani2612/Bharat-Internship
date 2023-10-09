@@ -1,0 +1,230 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    position: absolute;
+    /* font-family: 'Jost', sans-serif; */
+    /* align-items: center;  */
+    /* justify-content: center; */
+}
+
+
+/* Navigation Bar: Image  */
+#logo img{
+    width:88px;
+    height: 90px;
+    padding-top: 5px;
+    padding-left: 16px;
+    
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    /* border: 2px solid white; */
+    
+    width: 400px;
+    margin-top: 25px;
+    margin-left: 34px;
+    padding: 15px;
+    /* background-color: white; */
+    border-radius: 10px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: gray;
+    position: absolute;
+    height: 100%;
+    width: 100% ;
+
+    /* to bring the content over the background clolr, use z-index */
+    z-index:-1;
+    opacity: 0.4px;
+}
+
+.list1 a{
+    list-style: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 5px 21px;
+   color: white;
+   text-decoration: none;   /* to remove the underline link below*/
+}
+
+.list1 a:hover{
+    color:black;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+
+/* HOME SECTION  */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    align-items: center;
+    justify-content: center;
+    height:400px;
+    color:white;
+}
+
+#home::before{
+    content: "";
+    background-image:url('photo1.jpg') ;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 225%;
+    width: 100%;
+    /* to bring the content over the background clolr, use z-index */
+    z-index:-1;
+    opacity: 0.4px;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#home p{
+    font-size: 15px;
+    text-align:center;
+    /* margin-bottom: 20px; */
+    /* font-family: 'Fasthand', cursive; */
+    font-family: 'Bree Serif', serif;
+
+}
+
+.btn{
+    background-color: lightgrey;
+    color:black;
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 6px 20px;
+    margin:17px;
+    
+    
+}
+
+.btn:hover{
+    background-color: rgb(232, 184, 184);
+    font-weight: bold;
+
+}
+
+.heading{
+    font-size: 2.0rem;
+    padding: 12px;
+}
+
+
+
+
+/* Services Section */
+.h-primary{
+    font-size: 2.1rem;
+    padding:170px;
+    margin-top:-160px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#services{
+    margin-top:-161px;
+    display: flex;
+}
+
+.box{
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 5px;
+    border-radius: 23px;
+    background-color: #f2ecec;
+}
+
+.box img{
+    display: block;
+    margin: auto;
+    height: 140px;
+}
+
+#services .box p{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Clients section  */
+#client section{
+    position: relative;
+    height:344px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#clients img{
+    height:100px;
+}
+
+.client-item{
+    margin-top: -180px;
+    padding:40px;
+}
+
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('logo1.jpg');
+    width:100%;
+    margin-top: 120px;
+    height:60%;
+    z-index:-1;
+    opacity: 0.4;
+}
+
+
+/* Contact Section  */
+
+#contact{
+    position: relative;
+
+}
+
+#contact::before{
+    content:"";
+    position: absolute;
+    background:url('contact-us-gb3e2d8e39_1280.jpg') no-repeat center center/cover;
+    padding: auto;
+    width:100%;
+    height:100%;
+    margin-top: 250px;
+    z-index:-1;
+    opacity: 0.4;
+}

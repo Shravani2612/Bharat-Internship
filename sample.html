@@ -1,0 +1,232 @@
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url("img/backimg.jpg");
+
+    }
+
+    .left {
+        /* border:2px solid red; */
+        display: inline-block;
+        position: absolute;
+        margin: auto;
+        width: 8%;
+        left: 12px;
+        top: 10px;
+
+
+
+    }
+
+    .left img {
+
+        /* invert function converts black image to white or white to black  */
+        /* filter:invert(100%); */
+        width: 65px;
+        display: block;
+        margin: 5px auto;
+        background-repeat: no-repeat;
+    }
+
+    .left div {
+
+        text-align: center;
+    }
+
+    .mid {
+        /* border:2px solid whitesmoke; */
+        display: block;
+        width: 35%;
+        margin: 29px auto;
+        font-family: "Ysabeau+Office:ital";
+        /* text-align: center; */
+
+        /* to keep anything at center using margin, there are three conditions:
+        1. display:block;
+        2.set width
+        3.margin:auto */
+
+
+    }
+
+    .right {
+        /* border:2px solid red; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 43px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 24px 5px;
+    }
+
+    .navbar li a:hover,
+    .navbar a.active {
+
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 12px;
+        cursor: pointer;
+        font-family: "Ysabeau+Office:ital";
+    }
+
+    .btn:hover {
+        background-color: rgb(121, 121, 121);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 55px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .formgroup input {
+        width: 400px;
+        height: 25px;
+        font-size: 12px;
+        text-align: center;
+        display: block;
+        border: 2px solid black;
+        /* when we give width and set display:block, we can center align by margin:auto */
+        margin: 11px auto;
+        border-radius: 15px;
+        font-family: "Ysabeau+Office:ital";
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .formgroup button {
+        display: block;
+        width: 24%;
+        margin: 20px auto;
+        /* text-align: center; */
+    }
+
+
+    .footer1 {
+        background-color: whitesmoke;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 250px;
+
+        /* position: absolute; */
+
+    }
+
+    .footer1 ul {
+        color: black;
+        text-decoration: none;
+        list-style: none;
+        padding: 48px 95px;
+        margin: 98px auto;
+        left: 40px;
+    }
+
+    .footer1 ul a {
+
+        color: black;
+        text-decoration: none;
+        list-style: none;
+        margin: 50px auto;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+</style>
+</head>
+
+<body>
+<header class="header">
+
+    <!-- left box for logo  -->
+    <div class="left">
+        <img src="img/icon.png" alt="">
+        <div class>Urban Fitness</div>
+
+
+    </div>
+
+    <!-- mid box for navbar -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+    </div>
+
+    <!-- right box for buttons -->
+    <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+    </div>
+
+    <div class="container">
+        <h1>Join the Best Gym of Vadodara now!</h1>
+        <!-- we need a backend to fill the form, since we donot have that, we are writing noaction.php  -->
+        <form action="noaction.php">
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+
+            <div class="formgroup">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+
+            <div class="formgroup">
+                <button class="btn">Submit</buttuon>
+
+            </div>
+        </form>
+    </div>
+</header>
+
+<footer>
+    <div class="footer1">
+        <ul>
+            <li a href="#">LEGALS</li>
+            <li a href="#">Terms of Use</li>
+            <li a href="#">Privacy Policy</li>
+            <li a href="#">Interest Based Plans</li>
+        </ul>
+    </div>
+</footer>
+</body>
